@@ -44,6 +44,10 @@ flamegraph -o check_decaf.svg -- target/release/check_decaf
 
 Depending on your system, you would probably need to interrupt the execution of the application to generate the graph or report from valgrind.
 
+## Important
+
+Ledger application code is compiled in release mode, however due to limited stack, it crashes.
+
 ### Note
 
 I reproduced this issue on 32-GB RAM, 22-core CPU.
